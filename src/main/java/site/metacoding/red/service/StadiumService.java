@@ -26,4 +26,8 @@ public class StadiumService {
 	public void 경기장등록(StadiumInertReqDto stadiumInertReqDto) {
 		stadiumDao.insert(stadiumInertReqDto.toEntity());
 	}
+	
+	public void 경기장삭제(Integer id) {
+		stadiumDao.deleteById(id);
+	}
 }
